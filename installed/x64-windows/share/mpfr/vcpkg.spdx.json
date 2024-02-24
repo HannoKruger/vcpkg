@@ -1,0 +1,160 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/mpfr-x64-windows-4.1.0#4-3df16cb1-9ec1-4787-97e9-4895eee11b3f",
+  "name": "mpfr:x64-windows@4.1.0#4 8de29efdf49dbdb8e16afdb0873bf667662970462a56d57eb8651f8939282236",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-67e17c1782801cf481be9ac0b3765dff3e4bdeb8"
+    ],
+    "created": "2022-06-01T23:18:32Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "DEPENDENCY_MANIFEST_OF",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "mpfr",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "4.1.0#4",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/mpfr",
+      "homepage": "https://www.mpfr.org",
+      "licenseConcluded": "LGPL-3.0-or-later",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "The MPFR library is a C library for multiple-precision floating-point computations with correct rounding",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "mpfr:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "8de29efdf49dbdb8e16afdb0873bf667662970462a56d57eb8651f8939282236",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "LGPL-3.0-or-later",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "mpfr-${VERSION}.tar.xz",
+      "packageFileName": "mpfr-${VERSION}.tar.xz",
+      "downloadLocation": "http://www.mpfr.org/mpfr-${VERSION}/mpfr-${VERSION}.tar.xz",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "1bd1c349741a6529dfa53af4f0da8d49254b164ece8a46928cdb13a99460285622d57fe6f68cef19c6727b3f9daa25ddb3d7d65c201c8f387e421c7f7bee6273"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./dll.patch",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a7cc43126acc6347032c5d52489105f9de8057911eebe2425a15c9714e1352d7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./portfile.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "82388d9b2b98a826b28ffee8fc412ec8cea69af139afcdb2b4c74e32c5ee2763"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./src-only.patch",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "30ccd55d68977b4a991e9aa2c16138cd06a6d33e2c020800e17d71e38ec25f80"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./vcpkg.json",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0305bbeb98f74bd70a7e3ff41c5a2ab8589dac9a2f8e0b828eb37c1dd0804de4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

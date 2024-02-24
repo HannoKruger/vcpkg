@@ -1,0 +1,9 @@
+Package: gmp
+Version: 6.2.1
+Port-Version: 9
+Depends: gmp:x64-windows, yasm:x64-windows
+Architecture: x86-windows
+Multi-Arch: same
+Abi: 683b394479e633e8503f20756538d4d2557df2ba7cfb22ba98b5b1a3a22b7c40
+Description: The GNU Multiple Precision Arithmetic Library
+Type: Port

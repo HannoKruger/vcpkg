@@ -1,0 +1,68 @@
+Package: vcpkg-cmake
+Version: 2022-05-10
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 325b6723003deb50711147c8c3a1b1ab28450d9114a3b509669378119f607cb9
+Type: Port
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 2f76ab3688fda8fefa9f08cb08757a236cccca25a6125d4e0276fd1ee894997e
+Type: Port
+Status: install ok installed
+
+Package: yasm
+Version: 1.3.0
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config, yasm
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7ee56acd3e8ff53c5eda02d738df22d090371642d1b0f7f941a3b6a3e6445021
+Description: Yasm is a complete rewrite of the NASM assembler under the new BSD License.
+Type: Port
+Status: install ok installed
+
+Package: yasm
+Feature: tools
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build yasm tools
+Type: Port
+Status: install ok installed
+
+Package: gmp
+Version: 6.2.1
+Port-Version: 9
+Depends: gmp, yasm
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ad533a42c282b5acae573f53c1dd601bcb8c0cf6c2fcb53ac9be7f20063c2e7c
+Description: The GNU Multiple Precision Arithmetic Library
+Type: Port
+Status: install ok installed
+
+Package: gmp
+Version: 6.2.1
+Port-Version: 9
+Depends: gmp:x64-windows, yasm:x64-windows
+Architecture: x86-windows
+Multi-Arch: same
+Abi: 683b394479e633e8503f20756538d4d2557df2ba7cfb22ba98b5b1a3a22b7c40
+Description: The GNU Multiple Precision Arithmetic Library
+Type: Port
+Status: install ok installed
+
+Package: mpfr
+Version: 4.1.0
+Port-Version: 4
+Depends: gmp
+Architecture: x86-windows
+Multi-Arch: same
+Abi: 8c2e614eecbc0a75c3458dd2e3058bcd0e2c9e932942c58e68d56c9f97fa882a
+Description: The MPFR library is a C library for multiple-precision floating-point computations with correct rounding
+Type: Port
+Status: install ok installed
+
